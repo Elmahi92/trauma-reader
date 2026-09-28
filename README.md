@@ -1,19 +1,19 @@
-# مكتبة «عُذِّب في طفولته»
+# Arabic Trauma Reader
 
-قارئ عربي باتجاه RTL للفصول المترجمة من الكتاب، مع بحث شامل، فهرس فصول وأقسام، حفظ مواضع القراءة، تحكم بحجم الخط والتباعد، وتنزيل PDF.
+An Arabic, right-to-left reader for the translated book chapters. Features include full-text search, chapter and section navigation, saved bookmarks, reading controls, and a combined PDF download.
 
-## تشغيل محلي
+## Run Locally
 
-من مجلد المستودع:
+From the repository directory:
 
 ```powershell
 node server.js
 ```
 
-ثم افتح `http://localhost:4173/`.
+Then open `http://localhost:4173/`.
 
-## النشر على GitHub Pages
+## Deploy to GitHub Pages
 
-سير العمل في `.github/workflows/pages.yml` ينشر الموقع عند الدفع إلى الفرع `main`. فعّل Pages من إعدادات المستودع واجعل مصدر البناء **GitHub Actions**. بعد نجاح أول تشغيل سيظهر رابط الموقع في تبويب Actions أو إعدادات Pages.
+The workflow in `.github/workflows/pages.yml` deploys the site when changes are pushed to the `main` branch. In repository settings, enable Pages and set the deployment source to **GitHub Actions**. After the first successful run, GitHub will show the site URL in Actions or Pages settings.
 
-يتضمن مجلد `chapter_texts` الترجمات العربية فقط. لا تضع ملفات المصدر السويدية أو الملفات المؤقتة في مجلد النشر.
+The `chapter_texts` directory contains Arabic translations only. Do not add Swedish source files or temporary build files to the published site.
